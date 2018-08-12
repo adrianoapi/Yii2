@@ -4,7 +4,7 @@ namespace app\controllers;
 
 class TesteController extends \yii\web\Controller
 {
-    public function actionIndex($id)
+    public function actionIndex($id = null)
     {
     	$request = \Yii::$app->request;
     	$xpto    = $request->get('xpto');
