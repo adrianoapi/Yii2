@@ -3,3 +3,6 @@
 
 >composer create-project --prefer-dist yiisoft/yii2-app-basic .
 
+>php yii serve // yii serve // php -S localhost:8080 (http://localhost:8080/requirements.php)
+
+>php yii gii/controller --controllerClass="app\controllers\TesteController"
