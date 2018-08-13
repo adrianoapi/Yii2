@@ -5,14 +5,14 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `curses`.
  */
-class m180813_030451_create_curses_table extends Migration
+class m180813_030451_create_courses_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('curses', [
+        $this->createTable('courses', [
             'id' => $this->primarykey(),
             'name' => $this->string()->notNull(),
             'hours' => $this->integer()->notNull(),
@@ -24,6 +24,6 @@ class m180813_030451_create_curses_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('curses');
+        $this->dropTable('courses');
     }
 }

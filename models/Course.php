@@ -2,9 +2,14 @@
 
 namespace app\models;
 
-use app\models\Course;
+use yii\db\ActiveRecord;
 
-class Course extends \yii\db\ActiveRecord
+class Course extends ActiveRecord
 {
+
+	public static function tableName()
+	{
+		return 'courses';
+	}
 
 }

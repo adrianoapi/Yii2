@@ -2,13 +2,17 @@
 
 namespace app\controllers;
 
+use app\models\Course;
+
 class TesteController extends \yii\web\Controller
 {
-    public function actionIndex($id = null)
+    public function actionIndex()
     {
-    	$request = \Yii::$app->request;
-    	$xpto    = $request->get('xpto');
-        return $this->render('index', array('id' => $id, 'xpto' => $xpto));
+        $curses = Course::find()->all();
+        
+        foreach($curses as $curse):
+        	echo "{$curse->id} - {$curse->name} - {$curse->hours}<br>";
+        endforeach;
     }
 
     public function actionMaisParametros($id, $name)
