@@ -6,3 +6,9 @@
 >php yii serve // yii serve // php -S localhost:8080 (http://localhost:8080/requirements.php)
 
 >php yii gii/controller --controllerClass="app\controllers\TesteController"
+
+>php yii migrate/create create_curses_table --fields="id:primarykey,name:string,hours:integer"
+
+>php yii migrate/new
+
+>php yii migrate

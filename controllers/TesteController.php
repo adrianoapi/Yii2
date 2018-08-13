@@ -11,4 +11,9 @@ class TesteController extends \yii\web\Controller
         return $this->render('index', array('id' => $id, 'xpto' => $xpto));
     }
 
+    public function actionMaisParametros($id, $name)
+    {
+    	echo "$id - $name";die();
+    }
+
 }
